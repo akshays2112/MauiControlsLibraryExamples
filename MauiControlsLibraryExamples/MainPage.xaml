@@ -4,12 +4,10 @@
              xmlns:customControls="clr-namespace:MauiControlsLibrary;assembly=MauiControlsLibrary"
              x:Class="MauiControlsLibraryExamples.MainPage">
 
-    <ScrollView>
-        <StackLayout>
-            <customControls:MCCLLabel x:Name="TestLabel1" WidthRequest="200" HeightRequest="50" LabelText="TestLabel1" />
-            <customControls:MCCLButton x:Name="TestButton1" WidthRequest="200" HeightRequest="50" ButtonText="TestButton1" OnMCCLButtonTapped="TestButton1_OnMCCLButtonTapped" />
-            <customControls:MCCLListbox x:Name="TestListbox1" WidthRequest="200" HeightRequest="250" OnMCCLListboxTapped="TestListbox1_OnMCCLListboxTapped" />
-        </StackLayout>
-    </ScrollView>
+    <StackLayout>
+        <customControls:MCCLLabel x:Name="TestLabel1" WidthRequest="200" HeightRequest="50" LabelText="TestLabel1" />
+        <customControls:MCCLButton x:Name="TestButton1" WidthRequest="200" HeightRequest="50" ButtonText="TestButton1" OnMCCLButtonTapped="TestButton1_OnMCCLButtonTapped" />
+        <customControls:MCCLListbox x:Name="TestListbox1" WidthRequest="200" HeightRequest="250" OnMCCLListboxTapped="TestListbox1_OnMCCLListboxTapped" />
+    </StackLayout>
 
 </ContentPage>

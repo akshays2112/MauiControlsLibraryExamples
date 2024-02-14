@@ -63,9 +63,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Reference Include="MauiControlsLibrary">
-	    <HintPath>..\..\MauiControlsLibrary\MauiControlsLibrary\bin\Debug\net8.0-windows10.0.19041.0\MauiControlsLibrary.dll</HintPath>
-	  </Reference>
+	  <ProjectReference Include="..\..\MauiControlsLibrary\MauiControlsLibrary\MauiControlsLibrary.csproj" />
 	</ItemGroup>
 
 </Project>
