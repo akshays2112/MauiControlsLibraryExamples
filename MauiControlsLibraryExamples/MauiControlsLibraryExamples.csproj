@@ -56,15 +56,21 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiImage Remove="Resources\Images\Collapse.png" />
 	  <MauiImage Remove="Resources\Images\DrStrange.png" />
+	  <MauiImage Remove="Resources\Images\Expand.png" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\Collapse.png" />
 	  <None Remove="Resources\Images\DrStrange.png" />
+	  <None Remove="Resources\Images\Expand.png" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <EmbeddedResource Include="Resources\Images\Collapse.png" />
 	  <EmbeddedResource Include="Resources\Images\DrStrange.png" />
+	  <EmbeddedResource Include="Resources\Images\Expand.png" />
 	</ItemGroup>
 
 	<ItemGroup>

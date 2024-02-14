@@ -132,6 +132,8 @@ namespace MauiControlsLibraryExamples
                         ])
                     ])
                 ];
+            TestTreeview1.LoadExpandCollapseImages(GetType().GetTypeInfo().Assembly, "MauiControlsLibraryExamples.Resources.Images.Expand.png",
+                "MauiControlsLibraryExamples.Resources.Images.Collapse.png");
         }
 
         private void TestButton1_OnMCLButtonTapped(object sender, EventArgs e)
