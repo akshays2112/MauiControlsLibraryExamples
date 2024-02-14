@@ -9,7 +9,12 @@
                 "Kate", "Allison", "Chris", "Mike", "Lauren", "James" ];
             TestGrid1.HeaderNames = ["First Name", "Middle Name", "Last Name", "Age"];
             TestGrid1.Data = new string[,] { { "Akshay", "", "Srinivasan", "21" }, { "John", "", "Baptiste", "25" },
-                { "Bob", "Edward", "Smith", "34" }, { "Alice", "Charlotte", "Green", "26" } };
+                { "Bob", "Edward", "Smith", "34" }, { "Alice", "Charlotte", "Green", "26" },
+                { "Jane", "Kristi", "Woodhall", "32" }, { "Jill", "Justine", "Dane", "23" },
+                { "Brandon", "Kris", "Mellon", "29" }, { "Josh", "Janus", "Hobart", "27" },
+                { "Allen", "Long", "Pholsom", "35" }, { "Jake", "Mike", "Johnson", "33" },
+                { "Zed", "Zeb", "Zebenizer", "20" }, { "Kate", "Betty", "Landon", "28"}
+            };
         }
 
         private void TestButton1_OnMCCLButtonTapped(object sender, EventArgs e)
