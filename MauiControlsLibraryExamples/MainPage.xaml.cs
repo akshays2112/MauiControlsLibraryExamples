@@ -15,9 +15,11 @@
                 { "Allen", "Long", "Pholsom", "35" }, { "Jake", "Mike", "Johnson", "33" },
                 { "Zed", "Zeb", "Zebenizer", "20" }, { "Kate", "Betty", "Landon", "28"}
             };
+            TestCombobox1.Labels = ["Camaro", "Corvette", "BMW", "Mercedes Benz", "Santro Xing", "Bugatti", "Lamborghini",
+                "Honda City", "Toyota Camry", "Hugo", "Jaguar", "Maruti", "Fantasy Car 1", "Fantasy Car 2", "Fantasy Car 3" ];
         }
 
-        private void TestButton1_OnMCCLButtonTapped(object sender, EventArgs e)
+        private void TestButton1_OnMCLButtonTapped(object sender, EventArgs e)
         {
             TestLabel1.LabelText = "TestButton1";
         }
@@ -36,6 +38,14 @@
                 e.CurrentColIndex >= 0 && e.CurrentColIndex < TestGrid1.Data.GetLength(1))
             {
                 TestLabel1.LabelText = TestGrid1.Data[e.CurrentRowIndex, e.CurrentColIndex];
+            }
+        }
+
+        private void TestCombobox1_SelectedItemChanged(object sender, MauiControlsLibrary.MCLCombobox.ComboboxEventArgs e)
+        {
+            if (TestCombobox1.Labels != null && e.SelectedIndex >= 0 && e.SelectedIndex < TestCombobox1.Labels.Length)
+            {
+                TestLabel1.LabelText = TestCombobox1.Labels[e.SelectedIndex];
             }
         }
     }
