@@ -30,8 +30,20 @@ namespace MauiControlsLibraryExamples
                     [
                         new MCLTreeview.TreeviewNode("RN1_Child1_RN1C1", MCLTreeview.ExpandCollapseButtonState.Expanded,
                         [
-                            new MCLTreeview.TreeviewNode("RN1C1_Child1", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
-                            new MCLTreeview.TreeviewNode("RN1C1_Child2", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN1C1_Child1_RN1C1C1", MCLTreeview.ExpandCollapseButtonState.Expanded,
+                                [
+                                    new MCLTreeview.TreeviewNode("RN1C1C1_Child1", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                                    new MCLTreeview.TreeviewNode("RN1C1C1_Child2", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                                    new MCLTreeview.TreeviewNode("RN1C1C1_Child3", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                                    new MCLTreeview.TreeviewNode("RN1C1C1_Child4", MCLTreeview.ExpandCollapseButtonState.Expanded, null)
+                                ]),
+                            new MCLTreeview.TreeviewNode("RN1C1_Child2_RN1C1C2", MCLTreeview.ExpandCollapseButtonState.Expanded,
+                                [
+                                    new MCLTreeview.TreeviewNode("RN1C1C2_Child1", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                                    new MCLTreeview.TreeviewNode("RN1C1C2_Child2", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                                    new MCLTreeview.TreeviewNode("RN1C1C2_Child3", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                                    new MCLTreeview.TreeviewNode("RN1C1C2_Child4", MCLTreeview.ExpandCollapseButtonState.Expanded, null)
+                                ]),
                             new MCLTreeview.TreeviewNode("RN1C1_Child3", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
                             new MCLTreeview.TreeviewNode("RN1C1_Child4", MCLTreeview.ExpandCollapseButtonState.Expanded, null)
                         ]),
