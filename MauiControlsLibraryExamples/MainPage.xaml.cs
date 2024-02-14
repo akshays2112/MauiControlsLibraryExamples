@@ -21,7 +21,8 @@ namespace MauiControlsLibraryExamples
             TestCombobox1.Labels = ["Camaro", "Corvette", "BMW", "Mercedes Benz", "Santro Xing", "Bugatti", "Lamborghini",
                 "Honda City", "Toyota Camry", "Hugo", "Jaguar", "Maruti", "Fantasy Car 1", "Fantasy Car 2", "Fantasy Car 3" ];
             TestRadioButtonGroup1.Labels = ["Rock", "Paper", "Scissors"];
-            TestRadioButtonGroup2.Labels = ["Hulk", "Elastico", "Edward"];
+            TestRadioButtonGroup2.Labels = ["America", "Brazil", "United Kingdom", "India", "China", "Australia", "New Zealand",
+                "Germany", "Austria", "Poland", "Vietnam", "Cambodia", "Kenya", "South Africa" ];
             TestRadioButtonGroup2.ArrangeHorizontal = false;
             TestImage1.ImageTitle = "Dr. Strange";
             TestImage1.LoadImage(GetType().GetTypeInfo().Assembly, "MauiControlsLibraryExamples.Resources.Images.DrStrange.png");
