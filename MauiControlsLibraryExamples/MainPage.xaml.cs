@@ -23,6 +23,103 @@ namespace MauiControlsLibraryExamples
             TestRadioButtonGroup1.Labels = ["Rock", "Paper", "Scissors"];
             TestImage1.ImageTitle = "Dr. Strange";
             TestImage1.LoadImage(GetType().GetTypeInfo().Assembly, "MauiControlsLibraryExamples.Resources.Images.DrStrange.png");
+            TestImage1.ImageTapAreas = [new RectF(0, 0, 40, 60), new RectF(41, 0, 40, 60), new RectF(41, 61, 40, 60), new RectF(0, 61, 40, 60)];
+            TestTreeview1.TreeviewNodes = 
+                [
+                    new MCLTreeview.TreeviewNode("RootNode1_RN1", MCLTreeview.ExpandCollapseButtonState.Expanded,
+                    [
+                        new MCLTreeview.TreeviewNode("RN1_Child1_RN1C1", MCLTreeview.ExpandCollapseButtonState.Expanded,
+                        [
+                            new MCLTreeview.TreeviewNode("RN1C1_Child1", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN1C1_Child2", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN1C1_Child3", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN1C1_Child4", MCLTreeview.ExpandCollapseButtonState.Expanded, null)
+                        ]),
+                        new MCLTreeview.TreeviewNode("RN1_Child2_RN1C2", MCLTreeview.ExpandCollapseButtonState.Expanded,
+                        [
+                            new MCLTreeview.TreeviewNode("RN1C2_Child1", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN1C2_Child2", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN1C2_Child3", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN1C2_Child4", MCLTreeview.ExpandCollapseButtonState.Expanded, null)
+                        ]),
+                        new MCLTreeview.TreeviewNode("RN1_Child3_RN1C3", MCLTreeview.ExpandCollapseButtonState.Expanded,
+                        [
+                            new MCLTreeview.TreeviewNode("RN1C3_Child1", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN1C3_Child2", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN1C3_Child3", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN1C3_Child4", MCLTreeview.ExpandCollapseButtonState.Expanded, null)
+                        ]),
+                        new MCLTreeview.TreeviewNode("RN1_Child4_RN1C4", MCLTreeview.ExpandCollapseButtonState.Expanded,
+                        [
+                            new MCLTreeview.TreeviewNode("RN1C4_Child1", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN1C4_Child2", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN1C4_Child3", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN1C4_Child4", MCLTreeview.ExpandCollapseButtonState.Expanded, null)
+                        ])
+                    ]),
+                    new MCLTreeview.TreeviewNode("RootNode2_RN2", MCLTreeview.ExpandCollapseButtonState.Expanded,
+                    [
+                        new MCLTreeview.TreeviewNode("RN2_Child1_RN2C1", MCLTreeview.ExpandCollapseButtonState.Expanded,
+                        [
+                            new MCLTreeview.TreeviewNode("RN2C1_Child1", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN2C1_Child2", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN2C1_Child3", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN2C1_Child4", MCLTreeview.ExpandCollapseButtonState.Expanded, null)
+                        ]),
+                        new MCLTreeview.TreeviewNode("RN2_Child2_RN2C2", MCLTreeview.ExpandCollapseButtonState.Expanded,
+                        [
+                            new MCLTreeview.TreeviewNode("RN2C2_Child1", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN2C2_Child2", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN2C2_Child3", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN2C2_Child4", MCLTreeview.ExpandCollapseButtonState.Expanded, null)
+                        ]),
+                        new MCLTreeview.TreeviewNode("RN2_Child3_RN2C3", MCLTreeview.ExpandCollapseButtonState.Expanded,
+                        [
+                            new MCLTreeview.TreeviewNode("RN2C3_Child1", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN2C3_Child2", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN2C3_Child3", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN2C3_Child4", MCLTreeview.ExpandCollapseButtonState.Expanded, null)
+                        ]),
+                        new MCLTreeview.TreeviewNode("RN2_Child4_RN2C4", MCLTreeview.ExpandCollapseButtonState.Expanded,
+                        [
+                            new MCLTreeview.TreeviewNode("RN2C4_Child1", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN2C4_Child2", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN2C4_Child3", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN2C4_Child4", MCLTreeview.ExpandCollapseButtonState.Expanded, null)
+                        ])
+                    ]),
+                    new MCLTreeview.TreeviewNode("RootNode3_RN3", MCLTreeview.ExpandCollapseButtonState.Expanded,
+                    [
+                        new MCLTreeview.TreeviewNode("RN3_Child1_RN3C1", MCLTreeview.ExpandCollapseButtonState.Expanded,
+                        [
+                            new MCLTreeview.TreeviewNode("RN3C1_Child1", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN3C1_Child2", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN3C1_Child3", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN3C1_Child4", MCLTreeview.ExpandCollapseButtonState.Expanded, null)
+                        ]),
+                        new MCLTreeview.TreeviewNode("RN3_Child2_RN3C2", MCLTreeview.ExpandCollapseButtonState.Expanded,
+                        [
+                            new MCLTreeview.TreeviewNode("RN3C2_Child1", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN3C2_Child2", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN3C2_Child3", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN3C2_Child4", MCLTreeview.ExpandCollapseButtonState.Expanded, null)
+                        ]),
+                        new MCLTreeview.TreeviewNode("RN3_Child3_RN3C3", MCLTreeview.ExpandCollapseButtonState.Expanded,
+                        [
+                            new MCLTreeview.TreeviewNode("RN3C3_Child1", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN3C3_Child2", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN3C3_Child3", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN3C3_Child4", MCLTreeview.ExpandCollapseButtonState.Expanded, null)
+                        ]),
+                        new MCLTreeview.TreeviewNode("RN3_Child4_RN3C4", MCLTreeview.ExpandCollapseButtonState.Expanded,
+                        [
+                            new MCLTreeview.TreeviewNode("RN3C4_Child1", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN3C4_Child2", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN3C4_Child3", MCLTreeview.ExpandCollapseButtonState.Expanded, null),
+                            new MCLTreeview.TreeviewNode("RN3C4_Child4", MCLTreeview.ExpandCollapseButtonState.Expanded, null)
+                        ])
+                    ])
+                ];
         }
 
         private void TestButton1_OnMCLButtonTapped(object sender, EventArgs e)
@@ -72,11 +169,41 @@ namespace MauiControlsLibraryExamples
             }
         }
 
-        private void TestImage1_OnMCLImageTapped(object sender, EventArgs e)
+        private void TestImage1_OnMCLImageTapped(object sender, MCLImage.MCLImageEventArgs e)
         {
             if(sender is MCLImage mclImage && mclImage.Image != null && !string.IsNullOrEmpty(mclImage.ImageTitle))
             {
-                TestLabel1.LabelText = mclImage.ImageTitle;
+                string tmp = mclImage.ImageTitle;
+                if (e.TappedImageAreasIndexes != null && e.TappedImageAreasIndexes.Length > 0)
+                {
+                    for (int i = 0; i < e.TappedImageAreasIndexes.Length; i++)
+                    {
+                        switch (e.TappedImageAreasIndexes[i])
+                        {
+                            case 0:
+                                tmp += " TopLeft";
+                                break;
+                            case 1:
+                                tmp += " TopRight";
+                                break;
+                            case 2:
+                                tmp += "BottomRight";
+                                break;
+                            case 3:
+                                tmp += " BottomLeft";
+                                break;
+                        }
+                    }
+                }
+                TestLabel1.LabelText = tmp;
+            }
+        }
+
+        private void TestTreeview1_OnMCLTreeviewNodeLabelTapped(object sender, MCLTreeview.TreeviewNodeLabelTappedEventArgs e)
+        {
+            if(e != null && e.TreeviewNode != null && e.TreeviewNode.Label != null)
+            {
+                TestLabel1.LabelText = e.TreeviewNode.Label;
             }
         }
     }
