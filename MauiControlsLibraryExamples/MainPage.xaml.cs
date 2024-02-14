@@ -21,6 +21,8 @@ namespace MauiControlsLibraryExamples
             TestCombobox1.Labels = ["Camaro", "Corvette", "BMW", "Mercedes Benz", "Santro Xing", "Bugatti", "Lamborghini",
                 "Honda City", "Toyota Camry", "Hugo", "Jaguar", "Maruti", "Fantasy Car 1", "Fantasy Car 2", "Fantasy Car 3" ];
             TestRadioButtonGroup1.Labels = ["Rock", "Paper", "Scissors"];
+            TestRadioButtonGroup2.Labels = ["Hulk", "Elastico", "Edward"];
+            TestRadioButtonGroup2.ArrangeHorizontal = false;
             TestImage1.ImageTitle = "Dr. Strange";
             TestImage1.LoadImage(GetType().GetTypeInfo().Assembly, "MauiControlsLibraryExamples.Resources.Images.DrStrange.png");
             TestImage1.ImageTapAreas = [new RectF(0, 0, 40, 60), new RectF(41, 0, 40, 60), new RectF(41, 61, 40, 60), new RectF(0, 61, 40, 60)];
@@ -218,6 +220,15 @@ namespace MauiControlsLibraryExamples
             if(e != null && e.TreeviewNode != null && e.TreeviewNode.Label != null)
             {
                 TestLabel1.LabelText = e.TreeviewNode.Label;
+            }
+        }
+
+        private void TestRadioButtonGroup2_OnMCLRadioButtonGroupTapped(object sender, MCLRadioButtonGroup.RadioButtonGroupEventArgs e)
+        {
+            if (sender is MCLRadioButtonGroup radioButtonGroup && radioButtonGroup.SelectedRadioButtonIndex >= 0 &&
+                radioButtonGroup.SelectedRadioButtonIndex < radioButtonGroup.Labels.Length)
+            {
+                TestLabel1.LabelText = radioButtonGroup.Labels[radioButtonGroup.SelectedRadioButtonIndex];
             }
         }
     }
