@@ -5,9 +5,10 @@
              x:Class="MauiControlsLibraryExamples.MainPage">
 
     <StackLayout>
-        <customControls:MCCLLabel x:Name="TestLabel1" WidthRequest="200" HeightRequest="50" LabelText="TestLabel1" />
-        <customControls:MCCLButton x:Name="TestButton1" WidthRequest="200" HeightRequest="50" ButtonText="TestButton1" OnMCCLButtonTapped="TestButton1_OnMCCLButtonTapped" />
-        <customControls:MCCLListbox x:Name="TestListbox1" WidthRequest="200" HeightRequest="250" OnMCCLListboxTapped="TestListbox1_OnMCCLListboxTapped" />
+        <customControls:MCLLabel x:Name="TestLabel1" WidthRequest="200" HeightRequest="50" LabelText="TestLabel1" />
+        <customControls:MCLButton x:Name="TestButton1" WidthRequest="200" HeightRequest="50" ButtonText="TestButton1" OnMCCLButtonTapped="TestButton1_OnMCCLButtonTapped" />
+        <customControls:MCLListbox x:Name="TestListbox1" WidthRequest="200" HeightRequest="250" OnMCLListboxTapped="TestListbox1_OnMCCLListboxTapped" />
+        <customControls:MCLGrid x:Name="TestGrid1" WidthRequest="400" HeightRequest="400" OnMCLGridTapped="TestGrid1_OnMCLGridTapped" />
     </StackLayout>
 
 </ContentPage>
