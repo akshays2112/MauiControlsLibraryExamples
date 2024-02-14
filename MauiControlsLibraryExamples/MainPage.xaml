@@ -4,12 +4,26 @@
              xmlns:customControls="clr-namespace:MauiControlsLibrary;assembly=MauiControlsLibrary"
              x:Class="MauiControlsLibraryExamples.MainPage">
 
-    <StackLayout Padding="10" Spacing="10">
-        <customControls:MCLLabel x:Name="TestLabel1" WidthRequest="200" HeightRequest="50" LabelText="TestLabel1" />
-        <customControls:MCLButton x:Name="TestButton1" WidthRequest="200" HeightRequest="50" ButtonText="TestButton1" OnMCLButtonTapped="TestButton1_OnMCLButtonTapped" />
-        <customControls:MCLListbox x:Name="TestListbox1" WidthRequest="200" HeightRequest="250" OnMCLListboxTapped="TestListbox1_OnMCCLListboxTapped" />
-        <customControls:MCLGrid x:Name="TestGrid1" WidthRequest="400" HeightRequest="250" OnMCLGridTapped="TestGrid1_OnMCLGridTapped" />
-        <customControls:MCLCombobox x:Name="TestCombobox1" WidthRequest="225" HeightRequest="25" SelectedItemChanged="TestCombobox1_SelectedItemChanged" />
-    </StackLayout>
+    <Grid Padding="10">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <StackLayout Padding="10" Spacing="10">
+            <customControls:MCLLabel x:Name="TestLabel1" WidthRequest="200" HeightRequest="50" LabelText="TestLabel1" />
+            <customControls:MCLButton x:Name="TestButton1" WidthRequest="200" HeightRequest="50" ButtonText="TestButton1" OnMCLButtonTapped="TestButton1_OnMCLButtonTapped" />
+            <customControls:MCLCombobox x:Name="TestCombobox1" WidthRequest="225" HeightRequest="25" SelectedItemChanged="TestCombobox1_SelectedItemChanged" />
+            <customControls:MCLCheckbox x:Name="TestCheckbox1" WidthRequest="25" HeightRequest="25" OnMCLCheckboxChanged="TestCheckbox1_OnMCLCheckboxChanged" />
+            <customControls:MCLRadioButtonGroup x:Name="TestRadioButtonGroup1" WidthRequest="400" HeightRequest="25" OnMCLRadioButtonGroupTapped="TestRadioButtonGroup1_OnMCLRadioButtonGroupTapped" />
+        </StackLayout>
+        <StackLayout Grid.Column="1" Padding="10" Spacing="10">
+            <customControls:MCLImage x:Name="TestImage1" OnMCLImageTapped="TestImage1_OnMCLImageTapped" />
+            <customControls:MCLListbox x:Name="TestListbox1" WidthRequest="200" HeightRequest="250" OnMCLListboxTapped="TestListbox1_OnMCCLListboxTapped" />
+            <customControls:MCLGrid x:Name="TestGrid1" WidthRequest="400" HeightRequest="250" OnMCLGridTapped="TestGrid1_OnMCLGridTapped" />
+        </StackLayout>
+    </Grid>
 
 </ContentPage>

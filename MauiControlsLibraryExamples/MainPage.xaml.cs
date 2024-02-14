@@ -1,4 +1,7 @@
-﻿namespace MauiControlsLibraryExamples
+﻿using MauiControlsLibrary;
+using System.Reflection;
+
+namespace MauiControlsLibraryExamples
 {
     public partial class MainPage : ContentPage
     {
@@ -17,6 +20,9 @@
             };
             TestCombobox1.Labels = ["Camaro", "Corvette", "BMW", "Mercedes Benz", "Santro Xing", "Bugatti", "Lamborghini",
                 "Honda City", "Toyota Camry", "Hugo", "Jaguar", "Maruti", "Fantasy Car 1", "Fantasy Car 2", "Fantasy Car 3" ];
+            TestRadioButtonGroup1.Labels = ["Rock", "Paper", "Scissors"];
+            TestImage1.ImageTitle = "Dr. Strange";
+            TestImage1.LoadImage(GetType().GetTypeInfo().Assembly, "MauiControlsLibraryExamples.Resources.Images.DrStrange.png");
         }
 
         private void TestButton1_OnMCLButtonTapped(object sender, EventArgs e)
@@ -48,6 +54,30 @@
                 TestLabel1.LabelText = TestCombobox1.Labels[e.SelectedIndex];
             }
         }
-    }
 
+        private void TestCheckbox1_OnMCLCheckboxChanged(object sender, EventArgs e)
+        {
+            if(sender is MCLCheckbox mclCheckbox)
+            {
+                TestLabel1.LabelText = mclCheckbox.IsChecked ? "Checked" : "Not checked";
+            }
+        }
+
+        private void TestRadioButtonGroup1_OnMCLRadioButtonGroupTapped(object sender, MCLRadioButtonGroup.RadioButtonGroupEventArgs e)
+        {
+            if(sender is MCLRadioButtonGroup radioButtonGroup && radioButtonGroup.SelectedRadioButtonIndex >= 0 && 
+                radioButtonGroup.SelectedRadioButtonIndex < radioButtonGroup.Labels.Length)
+            {
+                TestLabel1.LabelText = radioButtonGroup.Labels[radioButtonGroup.SelectedRadioButtonIndex];
+            }
+        }
+
+        private void TestImage1_OnMCLImageTapped(object sender, EventArgs e)
+        {
+            if(sender is MCLImage mclImage && mclImage.Image != null && !string.IsNullOrEmpty(mclImage.ImageTitle))
+            {
+                TestLabel1.LabelText = mclImage.ImageTitle;
+            }
+        }
+    }
 }
