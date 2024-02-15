@@ -34,7 +34,7 @@
             <customControls:MCLProgressBar x:Name="TestProgressBar3" WidthRequest="400" HeightRequest="35" CurrentValue="50" OnMCLProgressBarTapped="TestProgressBar3_OnMCLProgressBarTapped" />
             <customControls:MCLProgressBar x:Name="TestProgressBar4" WidthRequest="35" HeightRequest="100" ArrangeHorizontal="False" CurrentValue="50" ClipProgressBarImage="False"
                                            OnMCLProgressBarTapped="TestProgressBar4_OnMCLProgressBarTapped" />
-            <customControls:MCLButton x:Name="TestButton2" WidthRequest="150" HeightRequest="50" ButtonText="TestButton2" OnMCLButtonTapped="TestButton2_OnMCLButtonTapped" />
+            <customControls:MCLButton x:Name="TestButton2" WidthRequest="150" HeightRequest="50" ButtonText="TestButton2" ClipButtonBackgroundImage="True" OnMCLButtonTapped="TestButton2_OnMCLButtonTapped" />
         </StackLayout>
     </Grid>
 
