@@ -56,21 +56,33 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiImage Remove="Resources\Images\ButtonNotPressed.png" />
+	  <MauiImage Remove="Resources\Images\ButtonPressed.png" />
 	  <MauiImage Remove="Resources\Images\Collapse.png" />
 	  <MauiImage Remove="Resources\Images\DrStrange.png" />
 	  <MauiImage Remove="Resources\Images\Expand.png" />
+	  <MauiImage Remove="Resources\Images\ProgressBarImage.png" />
+	  <MauiImage Remove="Resources\Images\ProgressBarImageVertical.png" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\ButtonNotPressed.png" />
+	  <None Remove="Resources\Images\ButtonPressed.png" />
 	  <None Remove="Resources\Images\Collapse.png" />
 	  <None Remove="Resources\Images\DrStrange.png" />
 	  <None Remove="Resources\Images\Expand.png" />
+	  <None Remove="Resources\Images\ProgressBarImage.png" />
+	  <None Remove="Resources\Images\ProgressBarImageVertical.png" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <EmbeddedResource Include="Resources\Images\ButtonNotPressed.png" />
+	  <EmbeddedResource Include="Resources\Images\ButtonPressed.png" />
 	  <EmbeddedResource Include="Resources\Images\Collapse.png" />
 	  <EmbeddedResource Include="Resources\Images\DrStrange.png" />
 	  <EmbeddedResource Include="Resources\Images\Expand.png" />
+	  <EmbeddedResource Include="Resources\Images\ProgressBarImage.png" />
+	  <EmbeddedResource Include="Resources\Images\ProgressBarImageVertical.png" />
 	</ItemGroup>
 
 	<ItemGroup>

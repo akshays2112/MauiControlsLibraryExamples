@@ -137,6 +137,12 @@ namespace MauiControlsLibraryExamples
                 ];
             TestTreeview1.LoadExpandCollapseImages(GetType().GetTypeInfo().Assembly, "MauiControlsLibraryExamples.Resources.Images.Expand.png",
                 "MauiControlsLibraryExamples.Resources.Images.Collapse.png");
+            TestProgressBar3.ProgressBarBackgroundColor = Color.FromRgb(0x08, 0x76, 0x71);
+            TestProgressBar3.LoadProgressBarImages(GetType().GetTypeInfo().Assembly, null, "MauiControlsLibraryExamples.Resources.Images.ProgressBarImage.png");
+            TestProgressBar4.ProgressBarBackgroundColor = Color.FromRgb(0x08, 0x76, 0x71);
+            TestProgressBar4.LoadProgressBarImages(GetType().GetTypeInfo().Assembly, null, "MauiControlsLibraryExamples.Resources.Images.ProgressBarImageVertical.png");
+            TestButton2.LoadButtonBackgroundImages(GetType().GetTypeInfo().Assembly, "MauiControlsLibraryExamples.Resources.Images.ButtonNotPressed.png",
+                "MauiControlsLibraryExamples.Resources.Images.ButtonPressed.png");
         }
 
         private void TestButton1_OnMCLButtonTapped(object sender, EventArgs e)
@@ -231,6 +237,67 @@ namespace MauiControlsLibraryExamples
             {
                 TestLabel1.LabelText = radioButtonGroup.Labels[radioButtonGroup.SelectedRadioButtonIndex];
             }
+        }
+
+        private void TestProgressBar2_OnMCLProgressBarTapped(object sender, MCLProgressBar.MCLProgressBarEventArgs e)
+        {
+            if(sender is MCLProgressBar mclProgressBar)
+            {
+                decimal beforeIncrementValue = mclProgressBar.CurrentValue;
+                mclProgressBar.CurrentValue += 10;
+                if(mclProgressBar.CurrentValue > mclProgressBar.MaxValue)
+                {
+                    mclProgressBar.CurrentValue = mclProgressBar.MinValue;
+                }
+                TestLabel1.LabelText = $"Before:: {mclProgressBar.BeforeValueLabel}{beforeIncrementValue}{mclProgressBar.AfterValueLabel}; After:: {mclProgressBar.BeforeValueLabel}{mclProgressBar.CurrentValue}{mclProgressBar.AfterValueLabel}";
+            }
+        }
+
+        private void TestProgressBar1_OnMCLProgressBarTapped(object sender, MCLProgressBar.MCLProgressBarEventArgs e)
+        {
+            if (sender is MCLProgressBar mclProgressBar)
+            {
+                decimal beforeIncrementValue = mclProgressBar.CurrentValue;
+                mclProgressBar.CurrentValue -= 10;
+                if (mclProgressBar.CurrentValue < mclProgressBar.MinValue)
+                {
+                    mclProgressBar.CurrentValue = mclProgressBar.MaxValue;
+                }
+                TestLabel1.LabelText = $"Before:: {mclProgressBar.BeforeValueLabel}{beforeIncrementValue}{mclProgressBar.AfterValueLabel}; After:: {mclProgressBar.BeforeValueLabel}{mclProgressBar.CurrentValue}{mclProgressBar.AfterValueLabel}";
+            }
+        }
+
+        private void TestProgressBar3_OnMCLProgressBarTapped(object sender, MCLProgressBar.MCLProgressBarEventArgs e)
+        {
+            if (sender is MCLProgressBar mclProgressBar)
+            {
+                decimal beforeIncrementValue = mclProgressBar.CurrentValue;
+                mclProgressBar.CurrentValue += 10;
+                if (mclProgressBar.CurrentValue > mclProgressBar.MaxValue)
+                {
+                    mclProgressBar.CurrentValue = mclProgressBar.MinValue;
+                }
+                TestLabel1.LabelText = $"Before:: {mclProgressBar.BeforeValueLabel}{beforeIncrementValue}{mclProgressBar.AfterValueLabel}; After:: {mclProgressBar.BeforeValueLabel}{mclProgressBar.CurrentValue}{mclProgressBar.AfterValueLabel}";
+            }
+        }
+
+        private void TestProgressBar4_OnMCLProgressBarTapped(object sender, MCLProgressBar.MCLProgressBarEventArgs e)
+        {
+            if (sender is MCLProgressBar mclProgressBar)
+            {
+                decimal beforeIncrementValue = mclProgressBar.CurrentValue;
+                mclProgressBar.CurrentValue -= 10;
+                if (mclProgressBar.CurrentValue < mclProgressBar.MinValue)
+                {
+                    mclProgressBar.CurrentValue = mclProgressBar.MaxValue;
+                }
+                TestLabel1.LabelText = $"Before:: {mclProgressBar.BeforeValueLabel}{beforeIncrementValue}{mclProgressBar.AfterValueLabel}; After:: {mclProgressBar.BeforeValueLabel}{mclProgressBar.CurrentValue}{mclProgressBar.AfterValueLabel}";
+            }
+        }
+
+        private void TestButton2_OnMCLButtonTapped(object sender, EventArgs e)
+        {
+            TestLabel1.LabelText = "TestButton2";
         }
     }
 }
