@@ -15,26 +15,33 @@
         </Grid.ColumnDefinitions>
         <StackLayout Padding="20" Spacing="20">
             <customControls:MCLLabel x:Name="TestLabel1" WidthRequest="400" HeightRequest="50" LabelText="TestLabel1" />
-            <customControls:MCLButton x:Name="TestButton1" WidthRequest="200" HeightRequest="50" ButtonText="TestButton1" OnMCLButtonTapped="TestButton1_OnMCLButtonTapped" />
+            <customControls:MCLButton x:Name="TestButton1" WidthRequest="200" HeightRequest="50" ButtonText="TestButton1" 
+                                      OnMCLButtonTapped="TestButton1_OnMCLButtonTapped" />
             <customControls:MCLCombobox x:Name="TestCombobox1" WidthRequest="225" HeightRequest="25" SelectedItemChanged="TestCombobox1_SelectedItemChanged" />
             <customControls:MCLCheckbox x:Name="TestCheckbox1" WidthRequest="25" HeightRequest="25" OnMCLCheckboxChanged="TestCheckbox1_OnMCLCheckboxChanged" />
-            <customControls:MCLRadioButtonGroup x:Name="TestRadioButtonGroup1" WidthRequest="320" HeightRequest="25" OnMCLRadioButtonGroupTapped="TestRadioButtonGroup1_OnMCLRadioButtonGroupTapped" />
-            <customControls:MCLRadioButtonGroup x:Name="TestRadioButtonGroup2" WidthRequest="200" HeightRequest="350" OnMCLRadioButtonGroupTapped="TestRadioButtonGroup2_OnMCLRadioButtonGroupTapped" />
+            <customControls:MCLRadioButtonGroup x:Name="TestRadioButtonGroup1" WidthRequest="320" HeightRequest="25" 
+                                                OnMCLRadioButtonGroupTapped="TestRadioButtonGroup1_OnMCLRadioButtonGroupTapped" />
+            <customControls:MCLRadioButtonGroup x:Name="TestRadioButtonGroup2" WidthRequest="200" HeightRequest="350" 
+                                                OnMCLRadioButtonGroupTapped="TestRadioButtonGroup2_OnMCLRadioButtonGroupTapped" />
             <customControls:MCLImage x:Name="TestImage1" OnMCLImageTapped="TestImage1_OnMCLImageTapped" />
-            <customControls:MCLProgressBar x:Name="TestProgressBar1" WidthRequest="400" HeightRequest="35" CurrentValue="20" OnMCLProgressBarTapped="TestProgressBar1_OnMCLProgressBarTapped" />
+            <customControls:MCLProgressBar x:Name="TestProgressBar1" WidthRequest="400" HeightRequest="35" CurrentValue="20" 
+                                           OnMCLProgressBarTapped="TestProgressBar1_OnMCLProgressBarTapped" />
             <customControls:MCLProgressBar x:Name="TestProgressBar2" WidthRequest="80" HeightRequest="100" ArrangeHorizontal="False" CurrentValue="80"
                                            OnMCLProgressBarTapped="TestProgressBar2_OnMCLProgressBarTapped" />
         </StackLayout>
         <StackLayout Grid.Column="1" Padding="20" Spacing="20">
             <customControls:MCLListbox x:Name="TestListbox1" WidthRequest="200" HeightRequest="250" OnMCLListboxTapped="TestListbox1_OnMCCLListboxTapped" />
             <customControls:MCLGrid x:Name="TestGrid1" WidthRequest="400" HeightRequest="250" OnMCLGridTapped="TestGrid1_OnMCLGridTapped" />
-            <customControls:MCLTreeview x:Name="TestTreeview1" WidthRequest="300" HeightRequest="400" OnMCLTreeviewNodeLabelTapped="TestTreeview1_OnMCLTreeviewNodeLabelTapped" />
+            <customControls:MCLTreeview x:Name="TestTreeview1" WidthRequest="300" HeightRequest="400" 
+                                        OnMCLTreeviewNodeLabelTapped="TestTreeview1_OnMCLTreeviewNodeLabelTapped" />
         </StackLayout>
         <StackLayout Grid.Column="2" Padding="20" Spacing="20">
-            <customControls:MCLProgressBar x:Name="TestProgressBar3" WidthRequest="400" HeightRequest="35" CurrentValue="50" OnMCLProgressBarTapped="TestProgressBar3_OnMCLProgressBarTapped" />
-            <customControls:MCLProgressBar x:Name="TestProgressBar4" WidthRequest="35" HeightRequest="100" ArrangeHorizontal="False" CurrentValue="50" ClipProgressBarImage="False"
-                                           OnMCLProgressBarTapped="TestProgressBar4_OnMCLProgressBarTapped" />
-            <customControls:MCLButton x:Name="TestButton2" WidthRequest="150" HeightRequest="50" ButtonText="TestButton2" ClipButtonBackgroundImage="True" OnMCLButtonTapped="TestButton2_OnMCLButtonTapped" />
+            <customControls:MCLProgressBar x:Name="TestProgressBar3" WidthRequest="400" HeightRequest="35" CurrentValue="50" 
+                                           OnMCLProgressBarTapped="TestProgressBar3_OnMCLProgressBarTapped" />
+            <customControls:MCLProgressBar x:Name="TestProgressBar4" WidthRequest="35" HeightRequest="100" ArrangeHorizontal="False" CurrentValue="50" 
+                                           ClipProgressBarImage="False" OnMCLProgressBarTapped="TestProgressBar4_OnMCLProgressBarTapped" />
+            <customControls:MCLImageButton x:Name="TestButton2" WidthRequest="150" HeightRequest="50" ButtonText="TestButton2" ClipButtonBackgroundImage="True" 
+                                           OnMCLButtonTapped="TestButton2_OnMCLButtonTapped" />
         </StackLayout>
     </Grid>
 

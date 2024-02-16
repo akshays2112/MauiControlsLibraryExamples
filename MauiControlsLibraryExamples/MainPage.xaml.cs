@@ -27,7 +27,7 @@ namespace MauiControlsLibraryExamples
             TestImage1.ImageTitle = "Dr. Strange";
             TestImage1.LoadImage(GetType().GetTypeInfo().Assembly, "MauiControlsLibraryExamples.Resources.Images.DrStrange.png");
             TestImage1.ImageTapAreas = [new RectF(0, 0, 40, 60), new RectF(41, 0, 40, 60), new RectF(41, 61, 40, 60), new RectF(0, 61, 40, 60)];
-            TestTreeview1.TreeviewNodes = 
+            TestTreeview1.TreeviewNodes =
                 [
                     new MCLTreeview.TreeviewNode("RootNode1_RN1", MCLTreeview.ExpandCollapseButtonState.Expanded,
                     [
@@ -160,7 +160,7 @@ namespace MauiControlsLibraryExamples
 
         private void TestGrid1_OnMCLGridTapped(object sender, MauiControlsLibrary.MCLGrid.GridEventArgs e)
         {
-            if(TestGrid1.Data != null && e.CurrentRowIndex >= 0 && e.CurrentRowIndex < TestGrid1.Data.GetLength(0) && 
+            if (TestGrid1.Data != null && e.CurrentRowIndex >= 0 && e.CurrentRowIndex < TestGrid1.Data.GetLength(0) &&
                 e.CurrentColIndex >= 0 && e.CurrentColIndex < TestGrid1.Data.GetLength(1))
             {
                 TestLabel1.LabelText = TestGrid1.Data[e.CurrentRowIndex, e.CurrentColIndex];
@@ -177,7 +177,7 @@ namespace MauiControlsLibraryExamples
 
         private void TestCheckbox1_OnMCLCheckboxChanged(object sender, EventArgs e)
         {
-            if(sender is MCLCheckbox mclCheckbox)
+            if (sender is MCLCheckbox mclCheckbox)
             {
                 TestLabel1.LabelText = mclCheckbox.IsChecked ? "Checked" : "Not checked";
             }
@@ -185,7 +185,7 @@ namespace MauiControlsLibraryExamples
 
         private void TestRadioButtonGroup1_OnMCLRadioButtonGroupTapped(object sender, MCLRadioButtonGroup.RadioButtonGroupEventArgs e)
         {
-            if(sender is MCLRadioButtonGroup radioButtonGroup && radioButtonGroup.SelectedRadioButtonIndex >= 0 && 
+            if (sender is MCLRadioButtonGroup radioButtonGroup && radioButtonGroup.SelectedRadioButtonIndex >= 0 &&
                 radioButtonGroup.SelectedRadioButtonIndex < radioButtonGroup.Labels.Length)
             {
                 TestLabel1.LabelText = radioButtonGroup.Labels[radioButtonGroup.SelectedRadioButtonIndex];
@@ -194,7 +194,7 @@ namespace MauiControlsLibraryExamples
 
         private void TestImage1_OnMCLImageTapped(object sender, MCLImage.MCLImageEventArgs e)
         {
-            if(sender is MCLImage mclImage && mclImage.Image != null && !string.IsNullOrEmpty(mclImage.ImageTitle))
+            if (sender is MCLImage mclImage && mclImage.Image != null && !string.IsNullOrEmpty(mclImage.ImageTitle))
             {
                 string tmp = mclImage.ImageTitle;
                 if (e.TappedImageAreasIndexes != null && e.TappedImageAreasIndexes.Length > 0)
@@ -224,7 +224,7 @@ namespace MauiControlsLibraryExamples
 
         private void TestTreeview1_OnMCLTreeviewNodeLabelTapped(object sender, MCLTreeview.TreeviewNodeLabelTappedEventArgs e)
         {
-            if(e != null && e.TreeviewNode != null && e.TreeviewNode.Label != null)
+            if (e != null && e.TreeviewNode != null && e.TreeviewNode.Label != null)
             {
                 TestLabel1.LabelText = e.TreeviewNode.Label;
             }
@@ -241,11 +241,11 @@ namespace MauiControlsLibraryExamples
 
         private void TestProgressBar2_OnMCLProgressBarTapped(object sender, MCLProgressBar.MCLProgressBarEventArgs e)
         {
-            if(sender is MCLProgressBar mclProgressBar)
+            if (sender is MCLProgressBar mclProgressBar)
             {
                 decimal beforeIncrementValue = mclProgressBar.CurrentValue;
                 mclProgressBar.CurrentValue += 10;
-                if(mclProgressBar.CurrentValue > mclProgressBar.MaxValue)
+                if (mclProgressBar.CurrentValue > mclProgressBar.MaxValue)
                 {
                     mclProgressBar.CurrentValue = mclProgressBar.MinValue;
                 }
