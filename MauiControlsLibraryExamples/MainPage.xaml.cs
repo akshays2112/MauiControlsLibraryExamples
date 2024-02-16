@@ -137,12 +137,18 @@ namespace MauiControlsLibraryExamples
                 ];
             TestTreeview1.LoadExpandCollapseImages(GetType().GetTypeInfo().Assembly, "MauiControlsLibraryExamples.Resources.Images.Expand.png",
                 "MauiControlsLibraryExamples.Resources.Images.Collapse.png");
-            TestProgressBar3.ProgressBarBackgroundColor = Color.FromRgb(0x08, 0x76, 0x71);
-            TestProgressBar3.LoadProgressBarImages(GetType().GetTypeInfo().Assembly, null, "MauiControlsLibraryExamples.Resources.Images.ProgressBarImage.png");
-            TestProgressBar4.ProgressBarBackgroundColor = Color.FromRgb(0x08, 0x76, 0x71);
-            TestProgressBar4.LoadProgressBarImages(GetType().GetTypeInfo().Assembly, null, "MauiControlsLibraryExamples.Resources.Images.ProgressBarImageVertical.png");
-            TestButton2.LoadButtonBackgroundImages(GetType().GetTypeInfo().Assembly, "MauiControlsLibraryExamples.Resources.Images.ButtonNotPressed.png",
+            TestImageProgressBar1.ProgressBarBackgroundColor = Color.FromRgb(0x08, 0x76, 0x71);
+            TestImageProgressBar1.LoadProgressBarImages(GetType().GetTypeInfo().Assembly, null, "MauiControlsLibraryExamples.Resources.Images.ProgressBarImage.png");
+            TestImageProgressBar2.ProgressBarBackgroundColor = Color.FromRgb(0x08, 0x76, 0x71);
+            TestImageProgressBar2.LoadProgressBarImages(GetType().GetTypeInfo().Assembly, null, "MauiControlsLibraryExamples.Resources.Images.ProgressBarImageVertical.png");
+            TestImageButton1.LoadButtonBackgroundImages(GetType().GetTypeInfo().Assembly, "MauiControlsLibraryExamples.Resources.Images.ButtonNotPressed.png",
                 "MauiControlsLibraryExamples.Resources.Images.ButtonPressed.png");
+            TestImageCombobox1.Labels = ["California", "Michigan", "Texas", "Arkansas", "New York", "Ohio", "Washington", "Philidelphia", "Florida",
+                "New Mexico", "Minnesota", "Nevada", "Tenesse", "Illinois", "Oregon"];
+            TestImageCombobox1.LoadComboboxButtonImages(GetType().GetTypeInfo().Assembly, "MauiControlsLibraryExamples.Resources.Images.ComboboxButtonNotPressedImage.png",
+                "MauiControlsLibraryExamples.Resources.Images.ComboboxButtonPressedImage.png");
+            TestImageCheckbox1.LoadCheckboxImages(GetType().GetTypeInfo().Assembly, "MauiControlsLibraryExamples.Resources.Images.CheckboxUnchecked.png",
+                "MauiControlsLibraryExamples.Resources.Images.CheckboxChecked.png");
         }
 
         private void TestButton1_OnMCLButtonTapped(object sender, EventArgs e)
@@ -267,7 +273,7 @@ namespace MauiControlsLibraryExamples
             }
         }
 
-        private void TestProgressBar3_OnMCLProgressBarTapped(object sender, MCLProgressBar.MCLProgressBarEventArgs e)
+        private void TestImageProgressBar1_OnMCLProgressBarTapped(object sender, MCLProgressBar.MCLProgressBarEventArgs e)
         {
             if (sender is MCLProgressBar mclProgressBar)
             {
@@ -281,7 +287,7 @@ namespace MauiControlsLibraryExamples
             }
         }
 
-        private void TestProgressBar4_OnMCLProgressBarTapped(object sender, MCLProgressBar.MCLProgressBarEventArgs e)
+        private void TestImageProgressBar2_OnMCLProgressBarTapped(object sender, MCLProgressBar.MCLProgressBarEventArgs e)
         {
             if (sender is MCLProgressBar mclProgressBar)
             {
@@ -295,9 +301,25 @@ namespace MauiControlsLibraryExamples
             }
         }
 
-        private void TestButton2_OnMCLButtonTapped(object sender, EventArgs e)
+        private void TestImageButton1_OnMCLButtonTapped(object sender, EventArgs e)
         {
             TestLabel1.LabelText = "TestButton2";
+        }
+
+        private void TestImageCombobox1_SelectedItemChanged(object sender, MCLCombobox.ComboboxEventArgs e)
+        {
+            if (TestImageCombobox1.Labels != null && e.SelectedIndex >= 0 && e.SelectedIndex < TestCombobox1.Labels.Length)
+            {
+                TestLabel1.LabelText = TestImageCombobox1.Labels[e.SelectedIndex];
+            }
+        }
+
+        private void TestImageCheckbox1_OnMCLCheckboxChanged(object sender, EventArgs e)
+        {
+            if (sender is MCLImageCheckbox mclImageCheckbox)
+            {
+                TestLabel1.LabelText = mclImageCheckbox.IsChecked ? "Image Checked" : "Image Not checked";
+            }
         }
     }
 }

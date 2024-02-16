@@ -58,7 +58,11 @@
 	<ItemGroup>
 	  <MauiImage Remove="Resources\Images\ButtonNotPressed.png" />
 	  <MauiImage Remove="Resources\Images\ButtonPressed.png" />
+	  <MauiImage Remove="Resources\Images\CheckboxChecked.png" />
+	  <MauiImage Remove="Resources\Images\CheckboxUnchecked.png" />
 	  <MauiImage Remove="Resources\Images\Collapse.png" />
+	  <MauiImage Remove="Resources\Images\ComboboxButtonNotPressedImage.png" />
+	  <MauiImage Remove="Resources\Images\ComboboxButtonPressedImage.png" />
 	  <MauiImage Remove="Resources\Images\DrStrange.png" />
 	  <MauiImage Remove="Resources\Images\Expand.png" />
 	  <MauiImage Remove="Resources\Images\ProgressBarImage.png" />
@@ -68,7 +72,11 @@
 	<ItemGroup>
 	  <None Remove="Resources\Images\ButtonNotPressed.png" />
 	  <None Remove="Resources\Images\ButtonPressed.png" />
+	  <None Remove="Resources\Images\CheckboxChecked.png" />
+	  <None Remove="Resources\Images\CheckboxUnchecked.png" />
 	  <None Remove="Resources\Images\Collapse.png" />
+	  <None Remove="Resources\Images\ComboboxButtonNotPressedImage.png" />
+	  <None Remove="Resources\Images\ComboboxButtonPressedImage.png" />
 	  <None Remove="Resources\Images\DrStrange.png" />
 	  <None Remove="Resources\Images\Expand.png" />
 	  <None Remove="Resources\Images\ProgressBarImage.png" />
@@ -78,7 +86,11 @@
 	<ItemGroup>
 	  <EmbeddedResource Include="Resources\Images\ButtonNotPressed.png" />
 	  <EmbeddedResource Include="Resources\Images\ButtonPressed.png" />
+	  <EmbeddedResource Include="Resources\Images\CheckboxChecked.png" />
+	  <EmbeddedResource Include="Resources\Images\CheckboxUnchecked.png" />
 	  <EmbeddedResource Include="Resources\Images\Collapse.png" />
+	  <EmbeddedResource Include="Resources\Images\ComboboxButtonNotPressedImage.png" />
+	  <EmbeddedResource Include="Resources\Images\ComboboxButtonPressedImage.png" />
 	  <EmbeddedResource Include="Resources\Images\DrStrange.png" />
 	  <EmbeddedResource Include="Resources\Images\Expand.png" />
 	  <EmbeddedResource Include="Resources\Images\ProgressBarImage.png" />
