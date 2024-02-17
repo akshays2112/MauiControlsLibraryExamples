@@ -32,8 +32,8 @@
         <StackLayout Grid.Column="1" Padding="20" Spacing="20">
             <customControls:MCLListbox x:Name="TestListbox1" WidthRequest="200" HeightRequest="250" OnMCLListboxTapped="TestListbox1_OnMCCLListboxTapped" />
             <customControls:MCLGrid x:Name="TestGrid1" WidthRequest="400" HeightRequest="250" OnMCLGridTapped="TestGrid1_OnMCLGridTapped" />
-            <customControls:MCLTreeview x:Name="TestTreeview1" WidthRequest="300" HeightRequest="400" 
-                                        OnMCLTreeviewNodeLabelTapped="TestTreeview1_OnMCLTreeviewNodeLabelTapped" />
+            <customControls:MCLImageTreeview x:Name="TestImageTreeview1" WidthRequest="300" HeightRequest="400" 
+                                        OnMCLTreeviewNodeLabelTapped="TestImageTreeview1_OnMCLTreeviewNodeLabelTapped" />
         </StackLayout>
         <StackLayout Grid.Column="2" Padding="20" Spacing="20">
             <customControls:MCLImageProgressBar x:Name="TestImageProgressBar1" WidthRequest="400" HeightRequest="35" CurrentValue="50" 
@@ -42,9 +42,12 @@
                                            ClipProgressBarImage="False" OnMCLProgressBarTapped="TestImageProgressBar2_OnMCLProgressBarTapped" />
             <customControls:MCLImageButton x:Name="TestImageButton1" WidthRequest="150" HeightRequest="50" ClipButtonBackgroundImage="True" 
                                            OnMCLButtonTapped="TestImageButton1_OnMCLButtonTapped" />
-            <customControls:MCLImageCombobox x:Name="TestImageCombobox1" WidthRequest="225" HeightRequest="25" SelectedItemChanged="TestImageCombobox1_SelectedItemChanged" />
+            <customControls:MCLImageCombobox x:Name="TestImageCombobox1" WidthRequest="225" HeightRequest="25" 
+                                             SelectedItemChanged="TestImageCombobox1_SelectedItemChanged" />
             <customControls:MCLImageCheckbox x:Name="TestImageCheckbox1" WidthRequest="25" HeightRequest="25" StrecthCheckboxImage="True"
                                              OnMCLCheckboxChanged="TestImageCheckbox1_OnMCLCheckboxChanged" />
+            <customControls:MCLTreeview x:Name="TestTreeview1" WidthRequest="300" HeightRequest="400" 
+                                        OnMCLTreeviewNodeLabelTapped="TestTreeview1_OnMCLTreeviewNodeLabelTapped" />
         </StackLayout>
     </Grid>
 
