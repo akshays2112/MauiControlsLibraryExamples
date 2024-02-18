@@ -9,9 +9,9 @@
             <RowDefinition />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="400" />
-            <ColumnDefinition Width="400" />
-            <ColumnDefinition Width="400" />
+            <ColumnDefinition Width="450" />
+            <ColumnDefinition Width="450" />
+            <ColumnDefinition Width="450" />
         </Grid.ColumnDefinitions>
         <StackLayout Padding="20" Spacing="20">
             <customControls:MCLLabel x:Name="TestLabel1" WidthRequest="400" HeightRequest="50" LabelText="TestLabel1" />
@@ -48,6 +48,7 @@
                                              OnMCLCheckboxChanged="TestImageCheckbox1_OnMCLCheckboxChanged" />
             <customControls:MCLTreeview x:Name="TestTreeview1" WidthRequest="300" HeightRequest="400" 
                                         OnMCLTreeviewNodeLabelTapped="TestTreeview1_OnMCLTreeviewNodeLabelTapped" />
+            <customControls:MCLIconLabelButton x:Name="TestIconWithLabelButton1" WidthRequest="300" HeightRequest="50" />
         </StackLayout>
     </Grid>
 

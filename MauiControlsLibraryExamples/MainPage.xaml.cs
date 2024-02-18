@@ -150,6 +150,19 @@ namespace MauiControlsLibraryExamples
                 "MauiControlsLibraryExamples.Resources.Images.ComboboxButtonPressedImage.png");
             TestImageCheckbox1.LoadCheckboxImages(GetType().GetTypeInfo().Assembly, "MauiControlsLibraryExamples.Resources.Images.CheckboxUnchecked.png",
                 "MauiControlsLibraryExamples.Resources.Images.CheckboxChecked.png");
+            TestIconWithLabelButton1.MCLLabelWidth = 225;
+            TestIconWithLabelButton1.MCLLabelHeight = 25;
+            TestIconWithLabelButton1.MCLLabel.LabelText = "TestIconWithLabelButton1";
+            TestIconWithLabelButton1.MCLIconImageWidth = 17;
+            TestIconWithLabelButton1.MCLIconImageHeight = 23;
+            TestIconWithLabelButton1.MCLIconImage.ImageTitle = "File";
+            TestIconWithLabelButton1.MCLIconImage.LoadImage(GetType().GetTypeInfo().Assembly, "MauiControlsLibraryExamples.Resources.Images.FileIcon.png");
+            TestIconWithLabelButton1.OnMCLButtonTapped += TestIconWithLabelButton1_OnMCLButtonTapped;
+        }
+
+        private void TestIconWithLabelButton1_OnMCLButtonTapped(object? sender, EventArgs e)
+        {
+            TestLabel1.LabelText = "TestIconWithLabelButton1";
         }
 
         private void TestButton1_OnMCLButtonTapped(object sender, EventArgs e)

@@ -65,6 +65,7 @@
 	  <MauiImage Remove="Resources\Images\ComboboxButtonPressedImage.png" />
 	  <MauiImage Remove="Resources\Images\DrStrange.png" />
 	  <MauiImage Remove="Resources\Images\Expand.png" />
+	  <MauiImage Remove="Resources\Images\FileIcon.png" />
 	  <MauiImage Remove="Resources\Images\ProgressBarImage.png" />
 	  <MauiImage Remove="Resources\Images\ProgressBarImageVertical.png" />
 	</ItemGroup>
@@ -79,6 +80,7 @@
 	  <None Remove="Resources\Images\ComboboxButtonPressedImage.png" />
 	  <None Remove="Resources\Images\DrStrange.png" />
 	  <None Remove="Resources\Images\Expand.png" />
+	  <None Remove="Resources\Images\FileIcon.png" />
 	  <None Remove="Resources\Images\ProgressBarImage.png" />
 	  <None Remove="Resources\Images\ProgressBarImageVertical.png" />
 	</ItemGroup>
@@ -93,6 +95,7 @@
 	  <EmbeddedResource Include="Resources\Images\ComboboxButtonPressedImage.png" />
 	  <EmbeddedResource Include="Resources\Images\DrStrange.png" />
 	  <EmbeddedResource Include="Resources\Images\Expand.png" />
+	  <EmbeddedResource Include="Resources\Images\FileIcon.png" />
 	  <EmbeddedResource Include="Resources\Images\ProgressBarImage.png" />
 	  <EmbeddedResource Include="Resources\Images\ProgressBarImageVertical.png" />
 	</ItemGroup>
